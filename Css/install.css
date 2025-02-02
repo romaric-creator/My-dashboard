@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('../Images/Background.jfif') no-repeat;
+    background-size: cover;
+    /* background-color: rgba(134, 198, 255, 0.493); */
+}
+.install{
+    width: 50%;
+    height: 60%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 55px -25px rgba(0, 0, 0, 0.253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+}
+.install .b1:target{
+    display: block;
+}
+.install .b1{
+    width: 100%;
+    height: 91%;
+    display: none;
+}
+.install .b1 .c1, .bb .c1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.install .b1 .box-le,.bb .box-le{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.install .b1 .box-le img,.bb .box-le img{
+   width: 50%;
+   border-radius: 17px;
+}
+.box-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+}
+.box-right h1{
+    text-transform: capitalize;
+}
+.box-right h1::first-letter{
+    color: royalblue;
+    font-size: 40px;
+}
+.box-right p::first-letter{
+    text-transform: capitalize;
+}
+.direction{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.precedent,.suivant{
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgba(65, 105, 225, 0.24);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.suivant:hover,.precedent:hover{
+    background-color: rgba(65, 105, 225, 0.5);
+
+}
+.it{
+    outline: none;
+    border: none;
+    background:  rgb(248, 248, 248);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 7px;
+    padding: 5px;
+}
+.its2,.its1{
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: none;
+}
+/* .its1{
+    position: absolute;
+    right: 0;
+    background-color: red;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 55px;
+    color: white;
+}
+.its2{
+    position: absolute;
+    left: 0;
+    background-color: green;
+    margin: 5px;
+    border-radius: 10px;
+    margin-top: 55px;
+    font-size: 18px;
+    color: white;
+} */
+.error{
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gold;
+}
+#ters{
+    cursor: pointer;
+}

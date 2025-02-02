@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    z-index: 3;
+    align-self: center;
+    background-color: royalblue;
+}
+
+.title {
+    color: white;
+    font-size: 2em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: auto;
+    text-transform: capitalize;
+}
+
+.logo {
+    color: white;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    text-transform: capitalize;
+}
+.logo p{
+    margin-right: 20px;
+}
+.logo img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 2px;
+}
+.title a{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    margin-right: 20px;
+    border-radius: 50%;
+
+}
+.param{
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    top: 40px;
+    padding: 20px;
+}
+.param ul{
+    list-style-type: none;
+    text-transform: capitalize;
+}
+.param ul li{
+    margin:  30px 20px;
+}
+.modmdp{
+    margin-left: 300px;
+    text-decoration: none;
+    color: royalblue;
+}
+#salle{
+    width: 100px;
+    border: 0;
+    outline: none;
+}
+.ppc{
+    width: 100%;
+    position: relative;
+    height: 200px;
+    display: flex;
+    background-color: rgba(65, 105, 225, 0.22);
+    justify-content: center;
+}
+.ppc img{
+    max-width: 400px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#pp2{
+    display: none;
+}
+.ppc:hover .bocp{
+    opacity: 1;
+}
+.bocp{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.126);
+    color: royalblue;
+    font-size: 30px;
+}
+.bocp span{
+    cursor: pointer;
+}
+.bg{
+    background-color: gray;
+}
+.lip{
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.211);
+    padding: 10px;
+}
+.lip a{
+    color: royalblue;
+    text-decoration: none;
+}
+.ct{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+.lisus{
+    width: 100%;
+    height: auto;
+}
+.lisus span{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+.lisus span img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

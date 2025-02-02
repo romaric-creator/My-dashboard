@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+  background-color: rgb(4, 47, 238);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.h {
+  width: 100%;
+  height: 35px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgb(4, 47, 238);
+}
+
+.h .go {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.h .p {
+  color: white;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+
+.h .icon-arrow-left {
+  padding: 7px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.maint {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-sal {
+  width: 99%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.salle-img {
+  height: 100%;
+  width: 150px;
+}
+
+.salle-img img {
+  width: 100%;
+  /* margin: 0 20px; */
+  position: relative;
+}
+
+.open_mach {
+  cursor: pointer;
+  width: 200px;
+}
+
+.name_p {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 100%;
+  text-transform: capitalize;
+  width: 150px;
+}
+
+.list_mach {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+}
+.list_mach .mach div table tr td {
+  word-wrap: break-all;
+    width: 20%;
+  position: relative;;
+}
+.list_mach .mach div{
+  word-wrap: break-all;
+    width: 70%;
+  position: relative;;
+}
+.mach {
+  width: 32%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.158);
+  text-align: center;
+}
+
+.lo {
+  width: 70px;
+  height: 70px;
+  font-size: 70px;
+}
+.lo img{
+  width: 50%;
+}
+.action {
+  padding: 7px;
+  background-color: rgba(255, 0, 0, 0.644);
+  border-radius: 5px;
+  position: relative;
+  top: 14px;
+  left: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.maint {
+  overflow: scroll;
+}
+
+.btnop {
+  width: 100%;
+  background-color: aqua;
+  height: 20px;
+}
+
+.right {
+  position: absolute;
+  right: 65px;
+  top: 1px;
+  width: 130px;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right a {
+  text-decoration: none;
+}
+
+.right span {
+  color: black;
+}
+
+.it2 {
+  width: 300px;
+}
+
+.formres {
+  transform: scale(0);
+}
+
+.up {
+  text-transform: capitalize;
+  margin-left: 20%;
+  width: 100%;
+}
+
+.te {
+  display: flex;
+}
+
+.op {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.op span {
+  font-size: 30px;
+  color: red;
+}
+
+.op a {
+  text-decoration: none;
+}
+
+.lr {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  padding: 5px;
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+}
+
+.boop {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  z-index: 10;
+}
+
+.boop .right {
+  height: 40px;
+  width: 130px;
+  border: 2px solid royalblue;
+  color: black;
+  right: 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+
+.boop .right span {
+  color: black;
+}
+
+.boop .right:hover {
+  border: 2px solid royalblue;
+  transition: 0.5s;
+  color: white;
+  background-color: royalblue;
+}
+
+.nmac {
+  text-align: center;
+  display: flex;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.delete {
+  height: 7px;
+  width: 70px;
+}
+
+.box-sal:hover .delete span {
+  display: block;
+}
+#search {
+  display: none;
+}
+.delete span {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.search_bar form {
+  width: 300px;
+  height: 24px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+.search_bar form input {
+  width: 100%;
+  height: 99%;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.search_bar form span {
+  color: rgb(4, 47, 238);
+  font-weight: 900;
+  font-size: 18px;
+  cursor: pointer;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+.mach2 {
+  width: 450px;
+  height: 250px;
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(157, 157, 157, 0.1);
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.mach2 p {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 10px;
+}
+.mach2 .co1 {
+  word-break: break-all;
+  margin: 30px;
+  padding: 10px;
+}
+@media screen  and (max-width:  1600px) {
+  .mach{
+    width: 48%;
+    position: relative;
+    height: 250px;
+  }
+  .mach .div{
+    width: 50%;
+    top: -20%;
+    background-color: rebeccapurple;
+    height: auto;
+  }
+  .mach div table{
+    width: 120%;
+    left: -35%;
+    position: absolute;
+  }
+}

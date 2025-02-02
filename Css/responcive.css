@@ -1,0 +1,22 @@
+/* @media screen and (max-width:622px) {
+    body{
+        background-color: lightseagreen;
+    }
+    .baniere{
+        display: none;
+    }
+    .resre{
+        top: 50px;
+        width: auto;
+        left: 0;
+    }
+    .a1{
+        display: none;
+    }
+    .a2{
+        display: block;
+    }
+    .a2 table th {
+        border-bottom: 0px;
+    }
+} */

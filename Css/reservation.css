@@ -1,0 +1,427 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+    background-color: rgb(4, 47, 238);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.conhea {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+} 
+.conhea .log {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conhea .log span {
+    color: white;
+    font-size: 40px;
+    margin-top: 4px;
+}
+
+.conhea .log p {
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+}
+
+.conhea .cox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conhea .soti {
+    color: rgba(255, 255, 255, 0.603);
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.conhea .bntres {
+    padding: 7px;
+    border: 2px solid rgb(4, 47, 238);
+    text-transform: capitalize;
+    border-radius: 10px;
+    background-color: transparent;
+    position: fixed;
+    right: 10px;
+    transition: 0.5s;
+    bottom: 40px;
+    margin-right: 10px;
+}
+.bntres:hover{
+    background-color: rgb(4, 47, 238);
+    transition: 0.5s;
+}
+.conhea .bntres:hover a{
+    color: white;
+}
+.conhea .bntres a {
+    color: black;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.conhea .bntres a span {
+    padding: 5px;
+}
+ .con {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    margin-top: 40px;
+    position: relative;
+    z-index: -1;
+}
+
+.con .resre {
+    height: auto;
+}
+
+.con .resre table {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.formres:target {
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.formres {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: 0.3s;
+    top: 0;
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    left: 0;
+    z-index: 5px;
+}
+
+.formres form {
+    background-color: white;
+    height: auto;
+    box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.144);
+    width: 500px;
+}
+
+.hed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(4, 47, 238);
+}
+
+.hed p {
+    color: white;
+    padding: 7px;
+    text-transform: capitalize;
+}
+
+.hed a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.hed span {
+    color: white;
+}
+
+.hed span:hover {
+    color: red;
+}
+
+.date {
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.171);
+    padding: 5px;
+    font-weight: bold;
+}
+
+.it {
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.171);
+    padding: 5px;
+    height: 30px;
+    margin: 7px;
+}
+
+.formres form label {
+    text-transform: capitalize;
+    padding: 15px;
+}
+.err{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+.sel {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ff .sel {
+    display: block;
+}
+
+.sel select {
+    outline: none;
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+.sel select option {
+    outline: none;
+    border: none;
+}
+
+.bot {
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bot .anl {
+    padding: 10px 15px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.bot input {
+    padding: 10px 15px;
+    background-color: green;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-transform: capitalize;
+}
+
+.error {
+    background-color: gold;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.confirm:target {
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.confirm {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: 0.3s;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.137);
+    transform: scale(0);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.confirm .ci {
+    height: 150px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+
+}
+
+.confirm .ci p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.green,
+.red {
+    padding: 10px 50px;
+    margin-top: 20px;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.green {
+    background-color: rgb(97, 250, 123);
+    left: 0;
+}
+
+.red {
+    background-color: rgb(252, 59, 59);
+    right: 0;
+}
+
+.ff form {
+    position: absolute;
+    height: auto;
+}
+
+.list:target {
+    background-color: rgba(65, 105, 225, 0.548);
+}
+
+.box-search {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    top: 100px;
+    right: 0;
+}
+
+.box-search .resre {
+    margin-top: -30px;
+}
+
+.lf {
+    text-align: center;
+    color: royalblue;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.rech {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: white;
+    color: white;
+    padding-top: 50px;
+}
+
+.rech h1 {
+    text-align: center;
+    color: rgb(4, 47, 238);
+}
+
+.rech table {
+    width: 100%;
+    height: auto;
+    color: black;
+    border-collapse: collapse;
+}
+
+.rech table th {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: cursive;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+}
+
+.rech table .list:hover {
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+.rech table td {
+    font-size: 14px;
+    text-transform: capitalize;
+    /* font-family: cursive; */
+    padding: 10px;
+    text-align: center;
+}
+
+.rech .caption {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    height: 20px;
+    align-items: center;
+    align-self: center;
+}
+
+.rech .caption p {
+    font-size: 20px;
+    color: black;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.rech .caption a {
+    text-decoration: none;
+    padding: 6px 15px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.rech table td {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+
+.rech table td a {
+    text-decoration: none;
+}
+
+.rech table td .mod {
+    color: green;
+    font-size: 25px;
+}
+
+.rech table td .sup {
+    font-size: 25px;
+    color: red;
+}
+.not{
+    font-size: 18px;
+}
+#co{
+    height: 100px;
+}

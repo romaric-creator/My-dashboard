@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+    background-color: rgb(4, 47, 238);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 10px;
+    background-color: gray
+}
+
+/* debut header code */
+
+.box-bar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: rgb(4, 47, 238);
+}
+
+.box-bar ul {
+    display: flex;
+    height: 100%;
+    position: relative;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+/* box logo */
+.logo {
+    height: 40px;
+    width: 180px;
+    margin-left: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo p {
+    color: white;
+    font-size: 1.2em;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.logo img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* box search */
+.search_bar form {
+    background-color: white;
+    width: 100%;
+    padding: 2px;
+}
+
+.search_bar form input {
+    width: 100%;
+    height: 20px;
+    border: 0;
+    outline: none;
+    padding: 2px;
+}
+
+/* box users */
+.menu_us {
+    width: 150px;
+    height: 25px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu_us .icon-bell .num {
+    color: white;
+    height: 20px;
+    width: 20px;
+    padding: 4px;
+    font-weight: 900;
+    font-size: 12px;
+    background-color: red;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    top: 3px;
+    margin-left: 10px;
+}
+
+.menu_us .icon-align-justify2 {
+    color: white;
+    cursor: pointer;
+    ;
+}
+
+.menu_us .icon-bell {
+    color: white;
+    font-size: 1.2em;
+}
+
+.menu_us .icon-user {
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    background-color: white;
+}
+
+/* menu items */
+.menu {
+    z-index: 4;
+    box-shadow: 0px 0px 55px 2px rgba(0, 0, 0, 0.274);
+    width: 190px;
+    height: auto;
+    background-color: white;
+    visibility: hidden;
+    position: fixed;
+    right: 0;
+    top: 45px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+
+.menu ul li a span {
+    padding: 10px 5px;
+}
+
+.menu ul li:hover {
+    background-color: rgba(128, 128, 128, 0.281);
+}
+
+.menu.open {
+    visibility: visible;
+}
+
+/* fin header code */
+
+/* debut code footer */
+
+
+.footer {
+    width: 100%;
+    background-color: rgb(4, 47, 238);
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+    z-index: 70;
+    left: 0;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    padding: 10px 20px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+/* fin code footer */
+
+/* debut du corp de l'app */
+
+.conte {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+}
+
+.baniere {
+    width: 100%;
+    height: 30%;
+    /* background: url('../Images/IA.PNG'); */
+}
+
+.re2 {
+    padding-bottom: 80px;
+}
+
+.resre {
+    height: auto;
+    top: 65px;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+}
+
+.resre table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.resre table th {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: cursive;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.resre table .list:hover {
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+.resre table td {
+    font-size: 14px;
+    text-transform: capitalize;
+    /* font-family: cursive; */
+    padding: 10px;
+    text-align: center;
+}
+
+.resre .caption {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    height: 20px;
+    align-items: center;
+    align-self: center;
+}
+
+.resre .caption p {
+    font-size: 20px;
+    color: black;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.resre .caption a {
+    text-decoration: none;
+    padding: 6px 15px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.resre table td {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+
+.resre table td a {
+    text-decoration: none;
+}
+
+.resre table td .mod {
+    color: green;
+    font-size: 25px;
+}
+
+.resre table td .sup {
+    font-size: 25px;
+    color: red;
+}
+
+.resre table td span {
+    font-size: 20px;
+}
+
+.not {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+}
+
+#noton {
+    transform-origin: 50% 0%;
+    position: absolute;
+    top: 0;
+    left: 65px;
+    animation: noti 2.5s ease infinite;
+}
+
+@keyframes noti {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+#search {
+    display: none;
+}
+
+.search_bar form {
+    background-color: white;
+    width: 400px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+
+.search_bar form span {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;;
+    color: royalblue;
+}
+.use{
+    color: black;
+}
+.pp{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 2px;
+}

@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contlog {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-size: cover;
+
+}
+.contlog::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/Background.jfif') no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+    filter: blur(5px);
+}
+.form {
+    width: 50%;
+    height: auto;
+    background: white;
+    box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form h1 {
+    text-align: center;
+    color: royalblue;
+    text-transform: capitalize;
+}
+
+input::placeholder {
+    text-transform: capitalize;
+}
+
+.form form {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.form form input[type="submit"] {
+    cursor: pointer;
+    background-color: royalblue;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    outline: none;
+}
+
+.form form input[type="email"],
+input[type="password"] {
+    width: 95%;
+    background: transparent;
+    height: 30px;
+    color: black;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: 0.3s;
+    position: relative;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen {}
