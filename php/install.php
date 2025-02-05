@@ -188,18 +188,18 @@
                             $sql12 = "INSERT INTO salle (nom_salle,disponibilite) VALUES ('salle 3','disponible')";
                             $req12 = mysqli_query($conn, $sql12);
                             if ($resal && $resto && $resus && $resres) {
-                                // $sys = ['windows 8','windows 7','windows 10','windows 7','windows 10'];
-                                // $nom = ['ordi-salle1','ordi-salle2','ordi-salle3','ordi-salle2','ordi-salle3'];
-                                // $capaciter = ['250','500','80','100'];
-                                // $ram = ['2','4','8','4','8'];
-                                // $processeur = ['intel core i3','intel core i2','penthium','intel core i2','penthium'];
-                                // $salle = ['1','2','3','1','2'];
-                                //     for($i=0;$i<=2;$i++){
-                                //         for($j=0;$j<=5;$j++){
-                                //             $sql65[$j]= "INSERT INTO ordinateurs (id_salle,nom_ordi,Systeme_E,proces,Disque,ram) VALUES ('$salle[$j]','$nom[$j]','$sys[$j]','$processeur[$j]','$capaciter[$j]','$ram[$j]')" ;
-                                //             $req = mysqli_query($conn,$sql65[$j]);
-                                //         }
-                                //     }
+                                $sys = ['windows 8','windows 7','windows 10','windows 7','windows 10'];
+                                $nom = ['ordi-salle1','ordi-salle2','ordi-salle3','ordi-salle2','ordi-salle3'];
+                                $capaciter = ['250','500','80','100','500'];
+                                $ram = ['2','4','8','4','8'];
+                                $processeur = ['intel core i3','intel core i2','penthium','intel core i2','penthium'];
+                                $salle = ['1','2','3','1','2'];
+                                    // for($i=0;$i<=2;$i++){
+                                    //     for($j=0;$j<=5;$j++){
+                                    //         $sql65[$j]= "INSERT INTO ordinateurs (id_salle,nom_ordi,Systeme_E,proces,Disque,ram) VALUES ('$salle[$j]','$nom[$j]','$sys[$j]','$processeur[$j]','$capaciter[$j]','$ram[$j]')" ;
+                                    //         $req = mysqli_query($conn,$sql65[$j]);
+                                    //     }
+                                    // }
                                 header("Location: install.php#t3");
                             } else {
                                 echo "noo";
